@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  app:
+    image: go-hello-world
+    build:
+      context: .
+    ports:
+      - "9000:9000"
+    env_file:
+      - .env
+
