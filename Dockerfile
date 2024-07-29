@@ -9,4 +9,4 @@ COPY --from=builder /app/hello .
 COPY .env .
 
 EXPOSE 9000
-CMD ["./hello"]
+CMD ["./main"]
